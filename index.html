@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ----------------------START-HEAD--------------------------- -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+                <!-- -------------Bootsrtap-------------- -->
+<link rel="stylesheet" href="./Css/bootstrap.min.css">
+                <!-- ---------------CSS+Font Awsome------------------ -->
+<link rel="stylesheet" href="./Css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+<!-- ----------------------------END-HEAD-------------------------- -->
+</head>
+
+<!-- ----------------------------START-BODY----------------------------- -->
+
+<body class="bg-dark">
+<!-- --------------------Navbar--------------------------- -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a href="#" class="py-5"><img src="./imgs/logo.png" class="pe-1" alt="logo"></a>
+        <a class="navbar-brand" href="#">Weather</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active brdr" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link brdr2" href="#">News</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link brdr2" href="#">Live Cameras</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link brdr2" href="#">Photos</a>
+                </li>
+                <li class="nav-item mx-2 ">
+                    <a class="nav-link brdr2" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+  </div>
+</nav>
+<!-- ---------------------------End-NAVBAR------------------------ -->
+
+<!-- ---------------------------Start-Home-------------------- -->
+    <div class="home pt-5">
+        <div class="bgg pt-5">
+            <input type="text" class="form-control rounded-5 border-0 py-3 w-75 mx-auto bg-dark border-1 placeholder-glow text-white" placeholder="Find your location..." id="searchInput">
+            <input type="button" class="border-0" value="Find" id="Submit">
+        </div> 
+    </div>
+    <section class="position-relative">
+        <div class="container">
+            <div class="row g-0">
+                <!-- --------------------today--------------------------- -->
+                <div class="col-md-4 border-0 overflow-hidden rounded-start-4">
+                    <div class="forecast w-100 pb-4">
+                        <div class="forecast-head2 py-1 d-flex justify-content-between">
+                            <p class="text-white ps-2" id="firstDay">Tuesday</p>
+                            <div class="no d-flex">
+                                <p class="text-white pe-2" id="firstDate">15</p><span id="firstMonth" class="text-white">May</span>  
+                            </div>
+                        </div>
+                        <div class="forecast-content">
+                            <div class="cityName pt-3">
+                                <p class="text-white" id="nameOfCite">Cairo</p>
+                            </div>
+                                <div class="degree d-flex">
+                                    <p class="pe-5 text-white" id="firstDegree">33</p>
+                                    <img src="./imgs/113.png" class="mt-4" alt="sun" width="55" height="80" id="firstImg">
+                                </div>
+                                <div class="sunny">
+                                    <p class="text-primary" id="firstCondition">Sunny</p>
+                                </div>
+                                <div class="forecast-icons">
+                                     <img class="px-1" src="./imgs/icon-umberella.png" alt="icon">  <span class="text-white" id="humidty"> 20%</span>
+                                    <span class="text-white" id="wind"> 18km/h</span> <img src="./imgs/icon-wind.png" alt="wind">
+                                    <span class="text-white" id="windDirection"><img src="./imgs/icon-compass.png" alt="wind"> East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <!-- --------------------tmw----------------------- -->
+
+                    <div class="col-md-4">
+                        <div class="forecast2 pb-4">
+                            <div class="forecast-head py-1 w-100">
+                                <p class="text-center text-white secDay">Wednesday</p>
+                            </div>
+                            <div class="forecast-content">
+                                <div class="forecast-icon text-center pt-3">
+                                    <img src="./imgs/113.png" alt="icon" class="secImg">
+                                </div>
+                                <div class="degree1 text-center pt-2">
+                                    <p class="text-white secDegree"><sup>o</sup>C</p>
+                                </div>
+                                <div class="small-degree text-center pt-1">
+                                    <p class="text-white secSmallDegree">24.7<sup>o</sup></p>
+                                </div>
+                                <div class="sunny1 text-center">
+                                    <p class="text-primary thirdCondition">Sunny</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                    <!-- --------------------after-tmw----------------------- -->
+                    <div class="col-md-4 border-0 overflow-hidden rounded-end-4">
+                        <div class="forecast pb-5">
+                            <div class="forecast-head2 py-1 w-100">
+                                <p class="text-center text-white secDay">Thursday</p>
+                            </div>
+                            <div class="forecast-content">
+                                <div class="forecast-icon text-center pt-3">
+                                    <img src="./imgs/113.png" alt="icon" class="secImg">
+                                </div>
+                                <div class="degree1 text-center pt-2">
+                                    <p class="text-white secDegree">38<sup>o</sup>C</p>
+                                </div>
+                                <div class="small-degree text-center pt-1">
+                                    <p class="text-white secSmallDegree">24.7<sup>o</sup></p>
+                                </div>
+                                <div class="sunny1 text-center">
+                                    <p class="text-primary thirdCondition">Sunny</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- -------------------------footer---------------------------- -->
+    <footer>
+        <div class="container py-5">
+            <div class="row justify-content-between">
+                <div class="col-md-8">
+                <input type="text" class="form-control rounded-5 border-0 py-3 w-100 bg-dark border-1 placeholder-glow text-white" placeholder="Enter your Email to subscribe..." id="searchInput">
+                <p class="ps-2 py-3 text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icons d-flex justify-content-end pe-4 gap-2">
+                        <div class="icn">
+                            <a href="http://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <div class="icn">
+                            <a href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <div class="icn">
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                        <div class="icn">
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- ------------------------------End Footer ------------------------- -->
+    
+
+
+<!-- ---------------------------END-Home-------------------- -->
+
+</body>
+<!-- --------------------------------END-BODY--------------------------- -->
+
+<!-- ----------------------JS--------------------- -->
+<script src="./JS/bootstrap.bundle.min.js"></script>
+<script src="./JS/main.js"></script>
+</html>
